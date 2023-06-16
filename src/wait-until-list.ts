@@ -1,4 +1,4 @@
-import { waitUntilSettled } from "./wait-until-settled.js";
+import { allSettledMutable } from "./all-settled-mutable.js";
 
 /** Generic implementation of `waitUntil` */
 export class WaitUntilList {
@@ -14,7 +14,7 @@ export class WaitUntilList {
   }
   /** Returns a promise that resolves when all promises in the list have been settled */
   waitUntilSettled = async () => {
-    const results = await waitUntilSettled(this.promises);
+    const results = await allSettledMutable(this.promises);
     this.settled = true;
     return results;
   }

@@ -1,4 +1,5 @@
-export async function waitUntilSettled(promises: Promise<unknown>[]): Promise<PromiseSettledResult<unknown>[]> {
+/** Like `Promise.allSettled`, but handles modifications to the promises array */
+export async function allSettledMutable(promises: Promise<unknown>[]): Promise<PromiseSettledResult<unknown>[]> {
   let len = 0;
   let values: unknown[] = []; // actually Promise[]
   // when the length of the array changes, there has been a nested call to waitUntil

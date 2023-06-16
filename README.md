@@ -7,7 +7,7 @@ npm i wait-until-generalized
 ```
 
 ```js
-import WaitUntilList from 'wait-until-generalized';
+import { WaitUntilList } from 'wait-until-generalized';
 
 const { waitUntil, waitUntilSettled } = new WaitUntilList();
 
