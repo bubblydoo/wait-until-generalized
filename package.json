@@ -1,11 +1,11 @@
 {
   "name": "wait-until-generalized",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Generalized waitUntil",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/bubblydoo/waituntil",
+  "repository": "https://github.com/bubblydoo/wait-until-generalized",
   "keywords": [
     "aws",
     "lambda"
